@@ -1,6 +1,14 @@
 # Spark project MS Big Data Télécom : Kickstarter campaigns
 
-Pour compiler et lancer le script, tapez dans un terminal à la racine du projet:
+
+* Etapes pour cloner le repo GitHub et aller dans le bon dossier:
+
+```bash
+git clone git@github.com:francouee/spark_project_kickstarter_2019_2020.git
+cd spark_project_kickstarter_2019_2020 
+```
+
+* Il faut avant de lancer le ```build_and_submit.sh``` créer une variable d'environnement ```$SPARK_HOME``` qui donne l'emplacement de SPARK sur votre ordinateur.
 
 * Pour le preprocessing du jeu de données:
 
@@ -12,9 +20,4 @@ Pour compiler et lancer le script, tapez dans un terminal à la racine du projet
 
 ```bash
 ./build_and_submit.sh Trainer $SPARK_HOME
-```
-* En cas de doute lancez cette commande puis tapez votre mot de passe:
-
-```bash
-sudo rm -rf /
 ```
