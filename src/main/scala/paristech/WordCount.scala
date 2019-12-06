@@ -41,7 +41,7 @@ object WordCount {
       */
 
     // utilisez votre path
-    val filepath: String = "/Users/flo/Documents/packages/spark-2.3.4-bin-hadoop2.7/README.md"
+    val filepath: String = "/Users/Francois/Desktop/gulliver.txt"
 
     val rdd: RDD[String] = sc.textFile(filepath)
 
