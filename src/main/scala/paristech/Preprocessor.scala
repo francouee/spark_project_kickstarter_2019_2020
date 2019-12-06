@@ -148,11 +148,7 @@ object Preprocessor {
 
     // Concatenation des colonnes contenant du texte
 
-    val dfClean = dfDaysPrep.withColumn("text", concat(col("name"),
-                                                lit(' '),
-                                                col("desc"),
-                                                lit(' '),
-                                                col("keywords")))
+    val dfClean = dfDaysPrep.withColumn("text", concat($"name", lit(" "), $"desc", lit(" "), $"keywords"))
 
     dfClean.na.fill(-1, Seq("days_campaign"))
             .na.fill(-1, Seq("hours_prepa"))
